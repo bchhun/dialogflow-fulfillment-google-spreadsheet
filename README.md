@@ -10,14 +10,14 @@ This is a simple [Express](http://expressjs.com/) app to be used with a [Dialogf
 
 You will need to create an `.env` file with the following content:
 
-* `SPREADSHEET_ID`: your spreadsheet id. it's in the url of your spreadsheet. Make sure it is public.
+* `SPREADSHEET_ID`: your spreadsheet id. it's in the url of your spreadsheet. Make sure the spreadsheet is public. The id in the current spreadheet is  `1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms`
 * `SPREADSHEET_API_KEY`: an API key that has a read-only access to google spreadsheet. Created in your google cloud project under the API section
 
 ## The dialogflow agent
 
-It's testable here: https://bot.dialogflow.com/0eac406e-b0c0-4169-9321-c8df60854b99
+It's testable here: [https://bot.dialogflow.com/0eac406e-b0c0-4169-9321-c8df60854b99](https://bot.dialogflow.com/0eac406e-b0c0-4169-9321-c8df60854b99)
 
-It's downloadable here: [http://bit.ly/2xN9g2k](http://bit.ly/2xN9g2k)
+The agent's export file is downloadable here: [http://bit.ly/2xN9g2k](http://bit.ly/2xN9g2k)
 
 The fulfillment url is already configured to hit this webhook :)
 
