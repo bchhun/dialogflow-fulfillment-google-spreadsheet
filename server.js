@@ -18,17 +18,19 @@ app.post('/', function(request, response) {
   // An intent's action serves as a mapping mechanism between your intent and a function living in your app.
   // const action = dialogflowRequest.queryResult.action;
   
-  return new Promise((resolve, reject) => {
-    googleSpreadsheet.getDataFromSpreadsheet().then((rows) => {
-      resolve(rows);
+  // these 3 variables could come from your intent's parameters !
+  const tabName = 'Class Data';
+  const startCell = 'A2';
+  const endCell = 'E';
+  
+  return googleSpreadsheet.getDataFromSpreadsheet(tabName, startCell, endCell)
+    .then((results) => {
+      response.json(
+        dialogflow.convertFormat(results)
+      );
+    }).catch((error) => {
+      throw new Error(error);
     });
-  }).then((results) => {
-    response.json(
-      dialogflow.convertFormat(results)
-    );
-  }).catch((error) => {
-    throw new Error(error);
-  });
 });
 
 // listen for requests :)

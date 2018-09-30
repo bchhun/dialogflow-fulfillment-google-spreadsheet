@@ -15,6 +15,8 @@ You will need to create an `.env` file with the following content:
 
 ## The dialogflow agent
 
+It's testable here: https://bot.dialogflow.com/0eac406e-b0c0-4169-9321-c8df60854b99
+
 It's downloadable here: [http://bit.ly/2xN9g2k](http://bit.ly/2xN9g2k)
 
 The fulfillment url is already configured to hit this webhook :)
