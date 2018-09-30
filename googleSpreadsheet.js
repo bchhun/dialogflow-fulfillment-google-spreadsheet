@@ -1,8 +1,7 @@
 const fs = require('fs');
-const readline = require('readline');
 const {google} = require('googleapis');
 
-function getDataFromSpreadsheet(tabName = 'Class Data', startCell = 'A2', endCell = 'E') {
+function getDataFromSpreadsheet(tabName, startCell, endCell) {
   return new Promise((resolve, reject) => {
     console.log('getDataFromSpreadsheet', typeof content);
 
